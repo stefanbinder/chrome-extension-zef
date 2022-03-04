@@ -1,0 +1,13 @@
+{
+  "name": "ZEF HO Autoselector",
+  "description": "Auto select HO homeoffice in ZEF",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "activeTab", "scripting", "webNavigation"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.zef.lutz.gmbh/*"],
+      "js": ["script.js"]
+    }
+  ]
+}
